@@ -1,97 +1,133 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Joseph Barber | Professional Barber</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0a0a0b">
+<meta name="description" content="Joseph Barber Pro in New Britain, Connecticut. Fades, haircuts, beard grooming, hot towel services and massage. Book by WhatsApp or phone. Atención en inglés y español.">
+<title>Joseph Barber Pro | Fresh Cuts. Real Confidence.</title>
 <style>
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;background:#101010;color:white;font-family:Arial,sans-serif}
-header{background:#080808;padding:25px 15px;text-align:center;border-bottom:2px solid #c6a35b}
-.logo{font-size:30px;font-weight:bold;letter-spacing:3px;color:#d6b46d}
-nav{margin-top:20px}
-nav a{color:white;text-decoration:none;margin:0 10px;font-size:14px}
-.hero{text-align:center;padding:90px 20px;background:linear-gradient(135deg,#171717,#303030)}
-.hero h1{font-size:clamp(36px,8vw,65px);margin:0}
-.hero p{color:#ddd;line-height:1.7}
-.gold{color:#d6b46d}
-.btn{display:inline-block;background:#c6a35b;color:#111;padding:15px 25px;margin-top:20px;text-decoration:none;font-weight:bold;border-radius:5px}
-section{padding:65px 20px;max-width:1100px;margin:auto;text-align:center}
-h2{font-size:32px}
-.subtitle{color:#aaa;margin-bottom:35px}
-.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-.gallery img{width:100%;height:280px;object-fit:cover;border-radius:8px;background:#222}
-.about{line-height:1.9;color:#ccc;max-width:650px;margin:auto}
-footer{text-align:center;background:#080808;padding:30px;color:#999;font-size:13px}
-@media(max-width:700px){
-.gallery{grid-template-columns:repeat(2,1fr)}
-.gallery img{height:210px}
-}
-@media(max-width:400px){
-.gallery{grid-template-columns:1fr}
-.gallery img{height:300px}
-}
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap');
+:root{--bg:#0b0c0d;--bg2:#111214;--panel:#171819;--line:#303135;--ivory:#f6f1e8;--muted:#aaa6a0;--gold:#dcb980;--gold2:#f7d6a0;--font:'DM Sans',Arial,sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ivory);font:16px/1.55 var(--font);-webkit-font-smoothing:antialiased}img{display:block;width:100%;height:auto;object-fit:cover}a{text-decoration:none;color:inherit}button{font:inherit;cursor:pointer}a:focus-visible,button:focus-visible{outline:2px solid var(--gold2);outline-offset:4px}.wrap{max-width:1220px;margin:0 auto;padding:0 25px}.eyebrow{color:var(--gold);font-size:12px;letter-spacing:.25em;font-weight:800;text-transform:uppercase}.eyebrow.tiny{font-size:10px;letter-spacing:.21em}.display{font-family:Manrope,Arial,sans-serif;font-weight:800;letter-spacing:-.06em;line-height:1.08}.section{padding:94px 0;border-top:1px solid #252628}.section h2{font-size:clamp(36px,4.8vw,63px);max-width:920px;margin:14px 0 18px}.intro{max-width:650px;color:var(--muted);margin:0;font-size:16px}.button{display:inline-flex;justify-content:center;align-items:center;gap:10px;border-radius:2px;font-weight:800;font-size:12px;letter-spacing:.1em;text-transform:uppercase;padding:16px 24px;min-height:54px;transition:transform .2s,background .2s;border:1px solid transparent}.button:hover{transform:translateY(-2px)}.button.gold{color:#14120f;background:linear-gradient(130deg,#f4dbad,#cda366)}.button.outline{color:var(--ivory);border-color:#666;background:transparent}.button.small{min-height:45px;padding:12px 18px}.button.whatsapp{color:#0b1b12;background:#b4e0bc}
+/* Header */
+.site-header{border-bottom:1px solid #2b2b2d;position:sticky;top:0;z-index:50;background:rgba(11,12,13,.96);backdrop-filter:blur(12px)}.nav{min-height:90px;display:flex;justify-content:space-between;align-items:center;gap:26px}.brand{font:800 24px/.93 Manrope,Arial,sans-serif;letter-spacing:.08em}.brand .accent{color:var(--gold)}.brand small{display:block;font:600 9px/1.5 var(--font);letter-spacing:.36em;color:#aaa5a1;margin-top:8px}.nav-items{display:flex;align-items:center;gap:26px;font-weight:700;font-size:12px}.nav-items a:hover{color:var(--gold)}.language-toggle{background:none;color:var(--gold2);border:1px solid #817259;padding:10px 14px;min-width:93px;border-radius:2px;font-size:12px;font-weight:800}
+/* hero */
+.hero{background:radial-gradient(ellipse at 80% 22%,#2e2820 0,transparent 45%);overflow:hidden}.hero-wrap{min-height:660px;display:grid;grid-template-columns:1.08fr .92fr;align-items:center;gap:55px;padding-top:65px;padding-bottom:76px}.hero h1{font-size:clamp(54px,6.8vw,100px);margin:18px 0 25px}.hero h1 span{color:var(--gold)}.hero p{font-size:18px;max-width:540px;color:#b9b7b1;margin:0}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:32px}.hero-image{position:relative;align-self:stretch;min-height:490px}.hero-image img{height:100%;min-height:500px;max-height:620px;object-position:center}.hero-image:after{content:'';position:absolute;border:1px solid var(--gold);inset:17px -14px -17px 14px;pointer-events:none;z-index:-1}.hero-image:before{content:'JOSEPH  /  BARBER PRO';position:absolute;bottom:20px;left:22px;right:22px;padding:12px 15px;color:#fff;background:#101010ad;backdrop-filter:blur(8px);font-size:11px;letter-spacing:.24em;font-weight:800;z-index:1}.stats{border-top:1px solid #292a2b;display:flex;gap:22px;flex-wrap:wrap;margin-top:30px;color:var(--muted);font-size:12px;letter-spacing:.04em}.stats span{padding-top:18px}.dot{color:var(--gold)}
+/* Prices */
+.price-head{display:flex;justify-content:space-between;align-items:end;gap:25px}.price-list{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:36px}.price-item{display:flex;justify-content:space-between;gap:18px;align-items:center;padding:30px 28px;border:1px solid #363636;background:#151516;min-height:142px}.price-item.featured{border-color:#a17b47;background:linear-gradient(140deg,#292316,#141515)}.price-item h3{font-size:17px;line-height:1.35;font-weight:750;margin:9px 0 0}.price{font:800 clamp(27px,3vw,38px)/1 Manrope,Arial,sans-serif;white-space:nowrap;color:var(--gold2)}.notice{font-size:12px;color:#aaa6a0;margin-top:24px}
+/* video promo */
+.promo{background:#121212}.promo-grid{display:grid;grid-template-columns:.98fr 1.02fr;gap:46px;align-items:center}.promo-media{position:relative}.promo-media video{width:100%;max-height:520px;aspect-ratio:4/3;object-fit:cover;background:#050505;border:1px solid #5e4c37}.promo-media:after{content:'';position:absolute;top:18px;right:-18px;bottom:-18px;left:18px;border:1px solid #a17b47;z-index:-1}.promo .big-price{display:block;color:var(--gold2);font:800 72px/1 Manrope,Arial,sans-serif;margin:18px 0}.promo .perks{color:#d9d4ca;margin:20px 0 4px;line-height:1.75}.promo .button{margin-top:21px}
+/* gallery */
+.gallery{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:17px;margin-top:36px}.work-card,.video-card{margin:0;background:var(--panel);border:1px solid #282a2a;min-width:0}.work-card img{width:100%;height:300px;transition:transform .35s;object-fit:cover}.work-card a{display:block;overflow:hidden}.work-card a:hover img{transform:scale(1.045)}figcaption{color:#d7d2ca;font-size:12px;min-height:44px;padding:12px 13px;letter-spacing:.04em}.gallery-subtitle{font-size:13px;font-weight:700;color:var(--gold);margin-top:40px;letter-spacing:.1em}.video-gallery{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin-top:20px}.video-card video{width:100%;aspect-ratio:3/4;object-fit:cover;background:#060606;display:block}
+/* about */
+.about-section{background:linear-gradient(140deg,#151515,#101112)}.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}.about-copy p{color:#c8c2b8;font-size:16px;line-height:1.85;max-width:580px}.family-images{display:grid;grid-template-columns:1fr 1fr;gap:12px;align-items:stretch}.family-images img{height:460px;object-fit:cover}.family-images img:nth-child(2){margin-top:46px;height:414px}.family-note{color:var(--gold);font-size:12px;font-weight:700;letter-spacing:.08em;margin-top:20px}
+/* contact */
+.contact-section{background:radial-gradient(ellipse at 50% 10%,#332919 0,transparent 55%)}.contact-card{text-align:center;max-width:750px;margin:auto}.contact-card h2{margin:17px auto}.contact-card .intro{margin:0 auto}.contact-buttons{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:12px;margin:34px 0 21px}.phone-number{font-weight:800;font-size:24px;letter-spacing:.05em;color:var(--gold2);display:inline-block;margin-top:4px}.footer{display:flex;justify-content:space-between;gap:18px;align-items:center;padding-top:28px;padding-bottom:28px;font-size:12px;color:#999;border-top:1px solid #252525}.footer strong{color:#c8b088}
+.floating-wa{position:fixed;bottom:23px;right:22px;padding:13px 17px;display:flex;gap:9px;align-items:center;background:#aee0b9;color:#09180c;border-radius:50px;font-weight:800;font-size:12px;z-index:30;box-shadow:0 6px 30px #0009}
+.lightbox{position:fixed;inset:0;z-index:200;background:#000e;display:none;align-items:center;justify-content:center;padding:65px 20px 25px}.lightbox.show{display:flex}.lightbox img{max-height:88vh;max-width:min(88vw,1000px);width:auto;object-fit:contain}.lightbox button{position:absolute;right:17px;top:14px;background:#222;border:1px solid #777;color:white;font-size:26px;width:45px;height:45px;line-height:1}
+@media(max-width:1050px){.nav-items{gap:14px}.gallery{grid-template-columns:repeat(3,1fr)}.video-gallery{grid-template-columns:repeat(2,1fr)}.hero-wrap{gap:30px}.hero h1{font-size:65px}}
+@media(max-width:800px){.section{padding:67px 0}.wrap{padding:0 19px}.nav{min-height:74px}.brand{font-size:19px}.nav-items a:not(.book-nav){display:none}.nav-items{gap:10px}.book-nav{display:none}.hero-wrap{grid-template-columns:1fr;gap:34px;min-height:initial;padding-top:50px;padding-bottom:58px}.hero-image{min-height:350px}.hero-image img{height:430px;min-height:0}.hero h1{font-size:clamp(50px,12vw,72px)}.price-list{grid-template-columns:1fr}.promo-grid,.about-grid{grid-template-columns:1fr;gap:31px}.gallery{grid-template-columns:repeat(2,1fr)}.family-images img{height:390px}.family-images img:nth-child(2){height:348px;margin-top:42px}.promo-media:after{display:none}.footer{flex-direction:column;text-align:center}.price-head{display:block}}
+@media(max-width:490px){.nav-items{gap:3px}.hero h1{font-size:50px}.hero p{font-size:16px}.section h2{font-size:36px}.gallery{gap:9px}.work-card img{height:230px}.video-gallery{gap:9px}.price-item{padding:19px 15px;min-height:118px}.price-item h3{font-size:14px}.price{font-size:30px}.family-images{gap:8px}.family-images img{height:295px}.family-images img:nth-child(2){height:265px;margin-top:30px}.floating-wa{padding:13px;bottom:14px;right:14px}.floating-wa span{display:none}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
 </style>
 </head>
 <body>
-
-<header>
-<div class="logo">JOSEPH <span class="gold">BARBER</span></div>
-<nav>
-<a href="#home">Home</a>
-<a href="#work">Portfolio</a>
-<a href="#about">About</a>
-<a href="#contact">Contact</a>
-</nav>
-</header>
-
-<div class="hero" id="home">
-<h1>PRECISION.<br><span class="gold">STYLE.</span><br>CONFIDENCE.</h1>
-<p>Professional barbering and attention to every detail.<br>New Britain, Connecticut.</p>
-<a class="btn" href="#work">EXPLORE MY WORK</a>
-</div>
-
-<section id="work">
-<h2>SELECTED <span class="gold">WORK</span></h2>
-<p class="subtitle">Fresh cuts. Clean details. Real results.</p>
-<div class="gallery">
-
-<img src="IMG_0048.jpeg" alt="Haircut 1">
-<img src="IMG_0049.jpeg" alt="Haircut 2">
-<img src="IMG_0050.jpeg" alt="Haircut 3">
-<img src="IMG_0051.jpeg" alt="Haircut 4">
-<img src="IMG_0052.jpeg" alt="Haircut 5">
-<img src="IMG_0054.jpeg" alt="Haircut 6">
-
-
-
-
-
-
-</div>
-</section>
-
-<section id="about">
-<h2>ABOUT <span class="gold">JOSEPH</span></h2>
-<p class="about">
-Welcome to Joseph Barber's portfolio.
-Explore a collection of barbering work showcasing
-precision, style, and attention to detail.
-</p>
-</section>
-
-<section id="contact">
-<h2>GET IN <span class="gold">TOUCH</span></h2>
-<p>New Britain, Connecticut</p>
-<p>Contact and booking information coming soon.</p>
-</section>
-
-<footer>
-<p>JOSEPH BARBER | PORTFOLIO PREVIEW</p>
-<p>Design preview. Not an official booking website.</p>
-</footer>
-
+<header class="site-header"><div class="nav wrap">
+ <a href="#home" class="brand" aria-label="Joseph Barber Pro home">JOSEPH <span class="accent">BARBER</span><small>PRO • NEW BRITAIN, CT</small></a>
+ <nav class="nav-items" aria-label="Main navigation">
+  <a href="#services" data-en="Services" data-es="Servicios">Services</a>
+  <a href="#work" data-en="My Work" data-es="Mis Trabajos">My Work</a>
+  <a href="#about" data-en="About Joseph" data-es="Conoce a Joseph">About Joseph</a>
+  <a href="#contact" class="book-nav" data-en="Book now" data-es="Reservar">Book now</a>
+  <button type="button" class="language-toggle" id="language-toggle" aria-label="Cambiar a español">🇵🇷 Español</button>
+ </nav>
+</div></header>
+<main>
+<section id="home" class="hero"><div class="wrap hero-wrap">
+ <div><span class="eyebrow" data-en="NEW BRITAIN · CONNECTICUT" data-es="NEW BRITAIN · CONNECTICUT">NEW BRITAIN · CONNECTICUT</span>
+  <h1 class="display" data-en="Every cut.<br><span>Every detail.</span>" data-es="Cada corte.<br><span>Cada detalle.</span>">Every cut.<br><span>Every detail.</span></h1>
+  <p data-en="Sharp fades, clean lines and professional grooming with personal attention to every client. Feel confident in the chair and leave looking your best." data-es="Desvanecidos definidos, líneas precisas y barbería profesional con atención personalizada. Siéntete cómodo en la silla y sal luciendo tu mejor estilo.">Sharp fades, clean lines and professional grooming with personal attention to every client. Feel confident in the chair and leave looking your best.</p>
+  <div class="hero-actions"><a class="button gold wa-link" href="https://wa.me/19592613818" data-en="Book on WhatsApp ↗" data-es="Reserva por WhatsApp ↗">Book on WhatsApp ↗</a><a class="button outline" href="#work" data-en="Explore my work" data-es="Ver mis trabajos">Explore my work</a></div>
+  <div class="stats"><span><b class="dot">✦</b> <span data-en="Professional service" data-es="Servicio profesional">Professional service</span></span><span><b class="dot">✦</b> <span data-en="English & Spanish" data-es="Inglés y español">English & Spanish</span></span></div>
+ </div>
+ <div class="hero-image"><img src="05-joseph-barber-at-work.jpg" alt="Joseph working on a customer's haircut"></div>
+</div></section>
+<section id="services" class="section"><div class="wrap"><span class="eyebrow" data-en="THE SERVICE MENU" data-es="MENÚ DE SERVICIOS">THE SERVICE MENU</span><div class="price-head"><div><h2 class="display" data-en="Services & prices" data-es="Servicios y precios">Services & prices</h2><p class="intro" data-en="Professional barbering and grooming. Choose the experience that fits your style." data-es="Barbería y cuidado personal profesional. Elige el servicio ideal para tu estilo.">Professional barbering and grooming. Choose the experience that fits your style.</p></div></div>
+<div class="price-list">
+<article class="price-item "><div class="price-label"><span class="eyebrow tiny" data-en="Classic Grooming" data-es="Servicio clásico">Classic Grooming</span><h3 data-en="Haircut + Eyebrows + Beard" data-es="Recorte + Cejas + Barba">Haircut + Eyebrows + Beard</h3></div><strong class="price">$40</strong></article>
+<article class="price-item featured"><div class="price-label"><span class="eyebrow tiny" data-en="Signature Experience" data-es="Experiencia especial">Signature Experience</span><h3 data-en="Haircut + Eyebrows + Beard + Hot Towel + Massage" data-es="Recorte + Cejas + Barba + Toalla Caliente + Masaje">Haircut + Eyebrows + Beard + Hot Towel + Massage</h3></div><strong class="price">$55</strong></article>
+<article class="price-item "><div class="price-label"><span class="eyebrow tiny" data-en="Fresh Start" data-es="Estilo para niños">Fresh Start</span><h3 data-en="Kids’ Haircut" data-es="Recorte para niños">Kids’ Haircut</h3></div><strong class="price">$30</strong></article>
+<article class="price-item "><div class="price-label"><span class="eyebrow tiny" data-en="Clean Details" data-es="Detalles definidos">Clean Details</span><h3 data-en="Eyebrows + Shave" data-es="Cejas + Afeitado">Eyebrows + Shave</h3></div><strong class="price">$25</strong></article>
+<article class="price-item "><div class="price-label"><span class="eyebrow tiny" data-en="Refresh Ritual" data-es="Ritual renovador">Refresh Ritual</span><h3 data-en="Shave + Eyebrows + Hot Towel + Massage" data-es="Afeitado + Cejas + Toalla Caliente + Masaje">Shave + Eyebrows + Hot Towel + Massage</h3></div><strong class="price">$35</strong></article>
+</div><p class="notice" data-en="For appointment availability and service details, contact Joseph directly." data-es="Para disponibilidad de citas y detalles de los servicios, comunícate directamente con Joseph.">For appointment availability and service details, contact Joseph directly.</p></div></section>
+<section class="section promo" id="signature"><div class="wrap promo-grid">
+ <div class="promo-media"><video controls playsinline preload="metadata" poster="video-cover-02.jpg" aria-label="Joseph giving a customer a relaxing grooming service"><source src="02-barber-in-action.mp4" type="video/mp4"></video></div>
+ <div><span class="eyebrow" data-en="THE SIGNATURE EXPERIENCE" data-es="LA EXPERIENCIA ESPECIAL">THE SIGNATURE EXPERIENCE</span><h2 class="display" data-en="A cut above.<br> A moment to unwind." data-es="Más que un recorte.<br> Un momento para relajarte.">A cut above.<br> A moment to unwind.</h2><strong class="big-price">$55</strong>
+ <p class="perks" data-en="Haircut + Eyebrows + Beard + Hot Towel + Massage" data-es="Recorte + Cejas + Barba + Toalla Caliente + Masaje">Haircut + Eyebrows + Beard + Hot Towel + Massage</p>
+ <p class="intro" data-en="A sharp look and a refreshing finish, all in one visit." data-es="Un estilo definido y un acabado relajante, todo en una visita.">A sharp look and a refreshing finish, all in one visit.</p>
+ <a class="button gold wa-link" href="https://wa.me/19592613818" data-en="Reserve this service ↗" data-es="Reserva este servicio ↗">Reserve this service ↗</a>
+ </div></div></section>
+<section id="work" class="section"><div class="wrap"><span class="eyebrow" data-en="THE PORTFOLIO" data-es="EL PORTAFOLIO">THE PORTFOLIO</span><h2 class="display" data-en="My work, up close." data-es="Mis trabajos, de cerca.">My work, up close.</h2><p class="intro" data-en="Every cut is built on precision and personal style. Browse real barbering work and videos." data-es="Cada recorte combina precisión y estilo personal. Mira fotografías y videos de trabajos de barbería.">Every cut is built on precision and personal style. Browse real barbering work and videos.</p>
+ <div class="gallery"><figure class="work-card"><a class="lightbox-link" href="IMG_0046.jpeg" aria-label="Open haircut photo"><img loading="lazy" src="IMG_0046.jpeg" data-backup="01-clean-skin-fade.jpg" alt="Joseph Barber Pro portfolio, haircut 1"></a><figcaption data-en="Precision fade" data-es="Desvanecido de precisión">Precision fade</figcaption></figure>
+<figure class="work-card"><a class="lightbox-link" href="IMG_0047.jpeg" aria-label="Open haircut photo"><img loading="lazy" src="IMG_0047.jpeg" data-backup="02-buzz-cut-taper.jpg" alt="Joseph Barber Pro portfolio, haircut 2"></a><figcaption data-en="Clean barber finish" data-es="Acabado profesional">Clean barber finish</figcaption></figure>
+<figure class="work-card"><a class="lightbox-link" href="IMG_0048.jpeg" aria-label="Open haircut photo"><img loading="lazy" src="IMG_0048.jpeg" data-backup="03-low-taper-fade.jpg" alt="Joseph Barber Pro portfolio, haircut 3"></a><figcaption data-en="Fresh cut" data-es="Corte fresco">Fresh cut</figcaption></figure>
+<figure class="work-card"><a class="lightbox-link" href="IMG_0049.jpeg" aria-label="Open haircut photo"><img loading="lazy" src="IMG_0049.jpeg" data-backup="04-classic-short-fade.jpg" alt="Joseph Barber Pro portfolio, haircut 4"></a><figcaption data-en="Sharp details" data-es="Detalles definidos">Sharp details</figcaption></figure>
+<figure class="work-card"><a class="lightbox-link" href="IMG_0051.jpeg" aria-label="Open haircut photo"><img loading="lazy" src="IMG_0051.jpeg" data-backup="05-joseph-barber-at-work.jpg" alt="Joseph Barber Pro portfolio, haircut 5"></a><figcaption data-en="Classic barbering" data-es="Barbería clásica">Classic barbering</figcaption></figure>
+<figure class="work-card"><a class="lightbox-link" href="IMG_0052.jpeg" aria-label="Open haircut photo"><img loading="lazy" src="IMG_0052.jpeg" data-backup="06-textured-taper-cut.jpg" alt="Joseph Barber Pro portfolio, haircut 6"></a><figcaption data-en="Refined style" data-es="Estilo refinado">Refined style</figcaption></figure>
+<figure class="work-card"><a class="lightbox-link" href="IMG_0054.jpeg" aria-label="Open haircut photo"><img loading="lazy" src="IMG_0054.jpeg" data-backup="07-kids-modern-fade.jpg" alt="Joseph Barber Pro portfolio, haircut 7"></a><figcaption data-en="Fresh from the chair" data-es="Recién salido de la silla">Fresh from the chair</figcaption></figure>
+<figure class="work-card"><a class="lightbox-link" href="01-clean-skin-fade.jpg" aria-label="Open haircut photo"><img loading="lazy" src="01-clean-skin-fade.jpg" alt="Skin fade haircut"></a><figcaption data-en="Skin fade" data-es="Desvanecido al ras">Skin fade</figcaption></figure>
+<figure class="work-card"><a class="lightbox-link" href="02-buzz-cut-taper.jpg" aria-label="Open haircut photo"><img loading="lazy" src="02-buzz-cut-taper.jpg" alt="Buzz cut taper haircut"></a><figcaption data-en="Buzz cut taper" data-es="Taper con corte corto">Buzz cut taper</figcaption></figure>
+<figure class="work-card"><a class="lightbox-link" href="03-low-taper-fade.jpg" aria-label="Open haircut photo"><img loading="lazy" src="03-low-taper-fade.jpg" alt="Low taper fade haircut"></a><figcaption data-en="Low taper fade" data-es="Desvanecido bajo">Low taper fade</figcaption></figure>
+<figure class="work-card"><a class="lightbox-link" href="04-classic-short-fade.jpg" aria-label="Open haircut photo"><img loading="lazy" src="04-classic-short-fade.jpg" alt="Classic short fade haircut"></a><figcaption data-en="Classic short fade" data-es="Desvanecido clásico">Classic short fade</figcaption></figure>
+<figure class="work-card"><a class="lightbox-link" href="05-joseph-barber-at-work.jpg" aria-label="Open haircut photo"><img loading="lazy" src="05-joseph-barber-at-work.jpg" alt="Barber at work haircut"></a><figcaption data-en="Barber at work" data-es="El barbero en acción">Barber at work</figcaption></figure>
+<figure class="work-card"><a class="lightbox-link" href="06-textured-taper-cut.jpg" aria-label="Open haircut photo"><img loading="lazy" src="06-textured-taper-cut.jpg" alt="Textured cut haircut"></a><figcaption data-en="Textured cut" data-es="Corte texturizado">Textured cut</figcaption></figure>
+<figure class="work-card"><a class="lightbox-link" href="07-kids-modern-fade.jpg" aria-label="Open haircut photo"><img loading="lazy" src="07-kids-modern-fade.jpg" alt="Kids’ fade haircut"></a><figcaption data-en="Kids’ fade" data-es="Desvanecido infantil">Kids’ fade</figcaption></figure>
+<figure class="work-card"><a class="lightbox-link" href="08-curly-textured-fade.jpg" aria-label="Open haircut photo"><img loading="lazy" src="08-curly-textured-fade.jpg" alt="Curly textured fade haircut"></a><figcaption data-en="Curly textured fade" data-es="Desvanecido con rizos">Curly textured fade</figcaption></figure></div>
+ <div class="gallery-subtitle" data-en="WATCH THE CRAFT IN ACTION" data-es="MIRA EL TRABAJO EN ACCIÓN">WATCH THE CRAFT IN ACTION</div>
+ <div class="video-gallery"><figure class="video-card"><video controls playsinline preload="none" poster="video-cover-01.jpg" aria-label="Video of Joseph Barber Pro's work"><source src="01-haircut-detailing.mp4" type="video/mp4"><span data-en="Your browser does not support videos" data-es="Tu navegador no permite videos">Your browser does not support videos</span></video><figcaption data-en="Massage & finishing touches" data-es="Masaje y acabados">Massage & finishing touches</figcaption></figure>
+<figure class="video-card"><video controls playsinline preload="none" poster="video-cover-02.jpg" aria-label="Video of Joseph Barber Pro's work"><source src="02-barber-in-action.mp4" type="video/mp4"><span data-en="Your browser does not support videos" data-es="Tu navegador no permite videos">Your browser does not support videos</span></video><figcaption data-en="Barber in action" data-es="Barbero en acción">Barber in action</figcaption></figure>
+<figure class="video-card"><video controls playsinline preload="none" poster="video-cover-03.jpg" aria-label="Video of Joseph Barber Pro's work"><source src="03-haircut-video-01.mp4" type="video/mp4"><span data-en="Your browser does not support videos" data-es="Tu navegador no permite videos">Your browser does not support videos</span></video><figcaption data-en="Fresh cuts in motion" data-es="Recortes en acción">Fresh cuts in motion</figcaption></figure>
+<figure class="video-card"><video controls playsinline preload="none" poster="video-cover-04.jpg" aria-label="Video of Joseph Barber Pro's work"><source src="04-haircut-video-02.mp4" type="video/mp4"><span data-en="Your browser does not support videos" data-es="Tu navegador no permite videos">Your browser does not support videos</span></video><figcaption data-en="Haircut details" data-es="Detalles de los recortes">Haircut details</figcaption></figure></div>
+ </div></section>
+<section id="about" class="section about-section"><div class="wrap about-grid">
+ <div class="about-copy"><span class="eyebrow" data-en="BEHIND THE CHAIR" data-es="DETRÁS DE LA SILLA">BEHIND THE CHAIR</span><h2 class="display" data-en="Know more<br>about Joseph." data-es="Conoce más<br>sobre Joseph.">Know more<br>about Joseph.</h2>
+ <p data-en="Joseph is a dedicated family man and an experienced barber who takes his craft seriously. He brings skill, care and attention to every service, always aiming for results his clients can feel proud of." data-es="Joseph es un hombre de familia dedicado y un barbero con amplia experiencia que se toma su trabajo muy en serio. Aporta habilidad, dedicación y atención a cada servicio para lograr resultados de los que sus clientes se sientan orgullosos.">Joseph is a dedicated family man and an experienced barber who takes his craft seriously. He brings skill, care and attention to every service, always aiming for results his clients can feel proud of.</p>
+ <p data-en="For Joseph, being a barber means more than a great haircut. It's about earning trust, making people feel welcome and seeing every client leave happy, confident and looking their best." data-es="Para Joseph, ser barbero es mucho más que hacer un buen recorte. Se trata de ganarse la confianza de las personas, hacerlas sentir bienvenidas y ver que cada cliente salga feliz, con confianza y luciendo su mejor estilo.">For Joseph, being a barber means more than a great haircut. It's about earning trust, making people feel welcome and seeing every client leave happy, confident and looking their best.</p>
+ <div class="family-note" data-en="FAMILY. DEDICATION. QUALITY." data-es="FAMILIA. DEDICACIÓN. CALIDAD.">FAMILY. DEDICATION. QUALITY.</div>
+ </div><div class="family-images"><img loading="lazy" src="09-joseph-family-movie.jpg" alt="Joseph enjoying a family outing at the movies"><img loading="lazy" src="10-joseph-family-portrait.jpg" alt="Joseph posing with family"></div>
+ </div></section>
+<section id="contact" class="section contact-section"><div class="wrap contact-card">
+ <span class="eyebrow" data-en="YOUR NEXT APPOINTMENT STARTS HERE" data-es="TU PRÓXIMA CITA COMIENZA AQUÍ">YOUR NEXT APPOINTMENT STARTS HERE</span>
+ <h2 class="display" data-en="Ready for a fresh look?" data-es="¿Listo para un nuevo estilo?">Ready for a fresh look?</h2>
+ <p class="intro" data-en="Call Joseph or send a WhatsApp message to request an appointment. Serving clients in New Britain, Connecticut." data-es="Llama a Joseph o envíale un mensaje por WhatsApp para solicitar una cita. Atendiendo clientes en New Britain, Connecticut.">Call Joseph or send a WhatsApp message to request an appointment. Serving clients in New Britain, Connecticut.</p>
+ <div class="contact-buttons"><a class="button whatsapp wa-link" href="https://wa.me/19592613818" data-en="Message on WhatsApp ↗" data-es="Escribe por WhatsApp ↗">Message on WhatsApp ↗</a><a class="button outline" href="tel:+19592613818" data-en="Call Joseph ↗" data-es="Llama a Joseph ↗">Call Joseph ↗</a></div>
+ <a class="phone-number" href="tel:+19592613818">(959) 261-3818</a>
+ </div></section>
+</main>
+<footer class="wrap footer"><span>© <span id="year"></span> <strong>JOSEPH BARBER PRO</strong> · New Britain, CT</span><span data-en="Website by Kenn Web Solutions" data-es="Página web por Kenn Web Solutions">Website by Kenn Web Solutions</span></footer>
+<a href="https://wa.me/19592613818" class="floating-wa wa-link" aria-label="Contact Joseph on WhatsApp"><span data-en="Book on WhatsApp" data-es="Reserva por WhatsApp">Book on WhatsApp</span> ✆</a>
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer"><button type="button" id="lightbox-close" aria-label="Close photo viewer">×</button><img alt="Expanded haircut photo" id="lightbox-img"></div>
+<script>
+(()=>{
+ const year=document.getElementById('year');year.textContent=new Date().getFullYear();
+ const toggle=document.getElementById('language-toggle');let lang='en';
+ try{lang=localStorage.getItem('joseph-lang')==='es'?'es':'en'}catch(e){}
+ function setLang(newLang){lang=newLang;document.documentElement.lang=lang;
+  document.querySelectorAll('[data-en][data-es]').forEach(el=>el.innerHTML=el.getAttribute('data-'+lang));
+  toggle.textContent=lang==='en'?'🇵🇷 Español':'🇺🇸 English';toggle.setAttribute('aria-label',lang==='en'?'Switch to Spanish':'Cambiar a inglés');
+  const msg=lang==='en'?"Hello Joseph! I would like to book a haircut appointment. What times are available?":"¡Hola Joseph! Quisiera reservar una cita. ¿Qué horarios tienes disponibles?";
+  document.querySelectorAll('.wa-link').forEach(link=>link.href='https://wa.me/19592613818?text='+encodeURIComponent(msg));
+  try{localStorage.setItem('joseph-lang',lang)}catch(e){}
+ }
+ toggle.addEventListener('click',()=>setLang(lang==='en'?'es':'en'));setLang(lang);
+ // Graceful preview if the existing GitHub pictures aren't in the download package.
+ document.querySelectorAll('img[data-backup]').forEach(im=>im.addEventListener('error',()=>{if(!im.dataset.backup)return; const fallback=im.dataset.backup;im.dataset.backup='';im.src=fallback;const link=im.closest('a');if(link)link.href=fallback;}));
+ const lightbox=document.getElementById('lightbox'),lightboxImg=document.getElementById('lightbox-img');
+ document.querySelectorAll('.lightbox-link').forEach(link=>link.addEventListener('click',event=>{event.preventDefault();lightboxImg.src=link.href;lightbox.classList.add('show');document.body.style.overflow='hidden';}));
+ function closeBox(){lightbox.classList.remove('show');document.body.style.overflow='';}
+ document.getElementById('lightbox-close').addEventListener('click',closeBox);lightbox.addEventListener('click',e=>{if(e.target===lightbox)closeBox()});document.addEventListener('keydown',e=>{if(e.key==='Escape')closeBox()});
+})();
+</script>
 </body>
 </html>
